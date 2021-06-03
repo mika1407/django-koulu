@@ -63,6 +63,7 @@ WSGI_APPLICATION = 'suppliers2021.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
@@ -70,6 +71,20 @@ DATABASES = {
     }
 }
 
+'''
+DATABASES = {
+    'default': {
+        'ENGINE': 'djongo',
+        'CLIENT': {
+           "name": 'SupplierDB',
+           'host': 'mongodb+srv://mikatii:auto1234V@cluster1.ogolp.mongodb.net/SupplierDB?retryWrites=true&w=majority',
+           "username": 'mikatii',
+           "password": 'auto1234V',
+           "authMechanism": "SCRAM-SHA-1",
+        },
+    }
+}
+'''
 
 # Password validation
 # https://docs.djangoproject.com/en/3.1/ref/settings/#auth-password-validators

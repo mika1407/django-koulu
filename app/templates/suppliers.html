@@ -9,6 +9,19 @@
 <h1>Suppliers</h1>
 
 <a onclick="showaddform()" class="btn btn-primary">Add new</a>
+<br />
+<br />
+<div class="card" style="width: 20rem;">
+    <div class="card-body">
+        <form method="post" action="/search-suppliers/">
+
+            {%csrf_token %}
+            <input class="card-text" class="card-text" type="text" placeholder="search" name="search">
+
+            <input type="submit" value="Search" class="btn btn-success btn-sm" name="">         
+        </form>
+    </div>
+</div>
 
 {% for s in suppliers %}
 <div class="card" style="width: 50rem;">
